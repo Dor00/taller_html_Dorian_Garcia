@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de Razas de Perros</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hamburger.css" /> </head>
+<body>
+    <header class="main-header">
+        <h1 id="titleText">🐶 Listado de Razas de Perros</h1>
+        <button id="hamburger-btn" class="hamburger-btn">
+            ☰ </button>
+    </header>
+
+    <nav class="main-nav" id="mainNav">
+        <div class="controls">
+            <button id="darkModeToggle">🌙 Modo Oscuro</button>
+            <select id="languageSelect">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </nav>
+
+    <main>
+        <section id="filterSection">
+            <label for="breed-select" id="selectLabel">🔎 Selecciona una raza:</label>
+            <select id="breed-select">
+                <option value="">-- Seleccione una raza --</option>
+            </select>
+        </section>
+
+        <section id="error-message"></section>
+
+        <section id="cards-container" class="cards-container"></section>
+
+        <section id="favoritesSection">
+            <h2 id="favoritesTitle">❤️ Favoritos</h2>
+            <div id="favorites-container" class="cards-container"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script src="hamburger.js"></script> </body>
+</html>

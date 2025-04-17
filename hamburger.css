@@ -1,0 +1,34 @@
+/* hamburger.css */
+.main-nav {
+    display: none; /* Ocultar por defecto en pantallas pequeñas */
+    /* Otros estilos para el menú (posición, fondo, etc.) */
+}
+
+.main-nav.open {
+    display: block; /* Mostrar cuando la clase 'open' está presente */
+    /* Estilos para cuando el menú está abierto */
+}
+
+.hamburger-btn {
+    display: block; /* Mostrar en pantallas pequeñas */
+    /* Estilos para el botón hamburguesa */
+}
+
+/* Ocultar el botón hamburguesa en pantallas más grandes donde el menú es visible */
+@media (min-width: /* Define aquí el ancho de pantalla para escritorio */) {
+    .hamburger-btn {
+        display: none;
+    }
+    .main-nav {
+        display: flex; /* O el tipo de display que tenías antes */
+        /* Otros estilos para el menú en escritorio */
+    }
+}
+
+/* Estilos para los controles dentro del menú */
+.main-nav .controls {
+    display: flex;
+    flex-direction: row; /* O row, según tu diseño */
+    align-items: flex-start; /* O center, flex-end, etc. */
+    /* Otros estilos */
+}
